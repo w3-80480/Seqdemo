@@ -1,0 +1,244 @@
+/* //src/Services.css */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+
+
+.service-section {
+    background-color: #000;
+    /* Sets the background to black */
+    color: #fff;
+    /* Sets the text color to white */
+    padding: 50px 170px;
+    /* Adds padding around the section */
+    text-align: left;
+    /* Aligns text to the left */
+}
+
+/* Header Section Styling */
+.header {
+    display: flex;
+    /* Enables flexbox for the header */
+    align-items: center;
+    /* Vertically centers content */
+    justify-content: space-between;
+    /* Positions h2 to the left and button to the right */
+    margin-bottom: 30px;
+    /* Adds space below the header */
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.service-header h5 {
+    font-size: 16px;
+    color: #af804d;
+    /* Adds a specific color for the subheading */
+    letter-spacing: 2px;
+    /* Adds space between letters */
+    margin-bottom: 10px;
+    /* Adds space below the subheading */
+    text-transform: uppercase;
+    /* Makes the subheading uppercase */
+    position: relative;
+    padding-left: 12px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.service-header h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #af804d;
+}
+
+
+.header h2 {
+    font-size: 46px;
+    /* Sets the font size for the main heading */
+    margin-bottom: 20px;
+    /* Adds space below the main heading */
+    flex-grow: 1;
+    font-family: syne, sans-serif;
+}
+
+
+
+.all-services-button {
+    background-color: #af804d;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    /* Removes border */
+    padding: 10px 24px;
+    /* Adds padding inside the button */
+    border-radius: 25px;
+    /* Rounds the button corners */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    display: flex;
+    /* Uses flexbox for alignment */
+    align-items: center;
+    /* Vertically centers content */
+    font-weight: bold;
+    /* Makes button text bold */
+    margin-left: auto;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    width: 150px;
+    line-height: 23.8px;
+    white-space: nowap;
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.all-services-button:hover {
+    background-color: #d4a373;
+    /* Button color on hover */
+    transition: 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+/* Service List Styling */
+.service-list {
+    display: flex;
+    flex-direction: column;
+    /* Aligns services vertically */
+    gap: 30px;
+    /* Adds space between service items */
+}
+
+/* Individual Service Item Styling */
+.service-item {
+    display: flex;
+    /* Uses flexbox for layout */
+    justify-content: space-between;
+    /* Aligns content to the sides */
+    align-items: center;
+    /* Vertically centers content */
+    padding: 20px 0;
+    /* Adds padding above and below each service */
+    border-bottom: 1px solid #333;
+    /* Adds a bottom border to separate items */
+    flex-wrap: wrap;
+}
+
+/* Title and Description of Each Service */
+.service-item h3 {
+    font-family: syne, sans-serif;
+    font-size: 36px;
+    /* Font size for the title */
+    font-style: normal;
+    margin: 0;
+    /* Removes default margin */
+    margin-bottom: 20px;
+    flex: 0 0 600px;
+}
+
+.service-item p {
+    color: #a0a0a0;
+    /* Changes the text color for the description */
+    max-width: 400px;
+    /* Limits the width of the description */
+    margin: 0;
+    /* Removes default margin */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Roboto, sans-serif;
+    flex: 1;
+}
+
+
+.service-footer {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;    
+}
+
+
+/* Styling for the Arrow Icon */
+.arrow-icon {
+    font-size: 50px;
+    border: 1.5px solid #af804d;
+    /* Border around the icon */
+    border-top-left-radius: 50%;
+    /* Makes the icon circular */
+    border-top-right-radius: 50%;
+    padding: 10px;
+    /* Adds padding inside the icon */
+    display: flex;
+    align-items: center;
+    /* Centers icon content */
+    justify-content: center;
+    /* Centers icon content */
+    color: #a67c52;
+    /* Icon color */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition on hover */
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.arrow-icon:hover {
+    background-color: #a67c52;
+    /* Background color on hover */
+    color: #000;
+    /* Text color on hover */
+}
+
+
+
+/* Container styling */
+.moving-text-container {
+    overflow: hidden;
+    /* Hides text that moves outside the container */
+    white-space: nowrap;
+    /* Prevents text from wrapping to the next line */
+    width: 100%;
+    /* Adjust as needed */
+    position: relative;
+    /* Allows absolute positioning of the text */
+}
+
+/* Moving text styling */
+.moving-text {
+    display: inline-block;
+    /* Allows the text to move */
+    font-weight: 400;
+    font-size: 100px;
+    font-stretch: 100%;
+    color: #af804d;
+    font-family: syne, sans-serif;
+    animation: moveText 15s linear infinite;
+    /* Apply animation */
+    box-sizing: border-box;
+    flex-grow: 1;
+    letter-spacing: normal;
+    line-height: 10px;
+    margin-right: 20px;
+    text-align: start;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+}
+
+/* Keyframes for the animation */
+@keyframes moveText {
+    0% {
+        transform: translateX(0%);
+        /* Start position (off-screen to the right) */
+    }
+
+    100% {
+        transform: translateX(-30%);
+        /* End position (off-screen to the left) */
+    }
+}
